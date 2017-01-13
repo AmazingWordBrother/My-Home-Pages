@@ -30,38 +30,25 @@
 		</div>
 		<div class="clear"></div>
 	</div>
-	<div class="box" id="box">
-			<div id="onl" class="on_left">&lt;</div>
-			<div id="onr" class="on_right">&gt;</div>
-			<ul class="btn" id="a" >
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-			<ul class="pic" id="b">
-				<li>
-					<a href="">
-						<img src="images/1.jpg" alt="" width="1226px" height="400px">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/2.jpg" alt="" width="1226px" height="400px">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/3.jpg" alt="" width="1226px" height="400px">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/4.jpg" alt="" width="1226px" height="400px">
-					</a>
-				</li>
-			</ul>
+	<div id="container">
+		<div class="sections">
+			<div class="section" id="section0"></div>
+			<div class="section" id="section1"></div>
+			<div class="section" id="section2"></div>
+			<div class="section" id="section3"></div>
+		</div>
 	</div>
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="dist/pageSwitch.min.js"></script>
+	<script>
+	$("#container").PageSwitch({
+		direction:'horizontal',
+		easing:'ease-in',
+		duration:1000,
+		autoPlay:true,
+		loop:'false'
+	});
+</script>
 	<div class="content">
 		<div class="content-top">
 			<p class="content-nav">欢迎来到惊悸的实验室——共享在WEIDEA.NET上</p>
@@ -267,51 +254,6 @@ for(var i = 0; i < a.length; i++){
 		b[this.index].style.display = "block";
 	}
 }
-</script>
-<script language="javascript">
-var aa= document.getElementById('a').getElementsByTagName('li');
-var bb= document.getElementById('b').getElementsByTagName('li');
-var c= document.getElementById('box');
-var right= document.getElementById('onr');
-var left= document.getElementById('onl');
-var now=0;
-aa[0].style.background='red';
-bb[0].style.opacity='1';
- function my(){
-    for(var i=0; i<aa.length; i++){
-        aa[i].style.background='#fff';	
-		bb[i].style.opacity='0';
-    }
-	aa[now].style.background='red';
-	bb[now].style.opacity='1';
-};
-for(var i=0; i<aa.length; i++){
-	aa[i].index=i;
-    aa[i].onclick= function () {
-    now=this.index;
-    my()
- }
-}
-function play(){
-	 now=(now+1)%aa.length;
-      my();			
-	}
- right.onclick=function play(){
-	 now=(now+1)%aa.length;
-      my();		
-	}
- left.onclick=function(){
-	if(now==0){now=aa.length};
-	 now=(now-1)%aa.length;
-      my();	
-	}		
- timer=setInterval('play()',1000);
- c.onmouseover= function () { 
-   clearInterval(timer); };
-
- c.onmouseout= function() { 
-   timer=setInterval('play()',1000);
- }
 </script>
 </body>
 </html>

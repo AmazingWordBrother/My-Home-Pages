@@ -1,14 +1,9 @@
-body{margin:0px;padding:0px;list-style:none;background:url(images/body.jpg);position:relative;}
+body{margin:0px;padding:0px;list-style:none;background-color:#EEF3FA;}
 a{text-decoration:none;}
 p{margin:0px;padding:0px;}
 li{list-style:none;}
 img{border:none;}
 .clear{clear:both;}
-.big{
-	width:1226px;
-	margin:0 auto;
-	background:#FFF;
-}
 .top{
 	width:1226px;
 	height:80px;
@@ -19,7 +14,7 @@ img{border:none;}
 .top-left{
 	position:absolute;
 	left:570px;
-	bottom:-4px;
+	bottom:-6px;
 	z-index:9999;
 	transition:0.5s;
 }
@@ -389,7 +384,6 @@ img{border:none;}
 	width:1226px;
 	height:712px;
 	margin:0 auto;
-	background:#FFF;
 }
 .content-top{
 	width:1226px;

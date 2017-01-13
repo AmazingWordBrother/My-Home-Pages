@@ -1,4 +1,4 @@
-body{margin:0px;padding:0px;background-color:#EEF3FA;background-color:#F0ECE0;background:url(images/body.jpg);position:relative;}
+body{margin:0px;padding:0px;}
 ul{list-style:none;margin:0px;padding:0px;}
 a{text-decoration:none;font-weight:bold;}
 p{font-weight:bold;margin:0px;}
@@ -84,71 +84,49 @@ img{border:none;}
 	color:#666;
 	background:yellow;
 }
-.pic li{
-	position:absolute;
-	top:0px;
-	left:0px;
-	right:0px;
-	opacity:0;
-	transition:all 1s;
+.right{
+	width:60px;
+	height:80px;
+	line-height:80px;
+	float:right;
+	cursor:pointer;
+	background:url(images/index1_03.png) no-repeat 0 16px;
+	background-size:100%;
 }
-.box{ 
+#container {
 	width:1226px;
-	height:400px;
+	height:500px;
 	margin:0 auto;
-	position:relative;
-	border:1px solid #999
+	overflow:hidden;
 }
-.box ul.btn{
-	position: absolute;
-	z-index: 999;
-	left: 526px;
-	top: 333px;
+.sections,.section {
+	height:100%;
 }
-.box ul.btn li{
-	width:30px;
-	height:30px;
-	border-radius:50%;
-	background:#FFF;
-	margin:0 5px;
-	float:left;
-	cursor:pointer 
+#container,.sections {
+	position: relative;
+}	
+.section {
+	background-color: #000;
+	background-size: cover;
+	background-position: 50% 50%;
+	text-align: center;
+	color: white;
 }
-.box .on_left{
-	width:50px;
-	height:100px; 
-	background:#ff6700; 
-	opacity:0.3; 
-	position:absolute; 
-	left:0px; 
-	top:50%; 
-	z-index:9; 
-	margin-top:-50px; 
-	cursor:pointer; 
-	font-size:50px; 
-	line-height:100px; 
-	text-align:center}
-.box .on_right{ 
-	width:50px; 
-	height:100px;
-	background:#ff6700; 
-	opacity:0.3; 
-	position:absolute; 
-	right:0px; top:50%; 
-	z-index:9; 
-	margin-top:-50px; 
-	cursor:pointer; 
-	font-size:50px;
-	line-height:100px; 
-	text-align:center
+#section0 {
+	border-radius:10px;
+	background-image: url('images/1.jpg');
 }
-.box .on_left:hover{
-	background:#FFFFFF; 
-	opacity:0.4; 
+#section1 {
+	border-radius:10px;
+	background-image: url('images/2.jpg');
 }
-.box .on_right:hover{
-	background:#FFFFFF; 
-	opacity:0.4; 
+#section2 {
+	border-radius:10px;
+	background-image: url('images/3.jpg');
+}
+#section3 {
+	border-radius:10px;
+	background-image: url('images/4.jpg');
 }
 .content{
 	width:1226px;
